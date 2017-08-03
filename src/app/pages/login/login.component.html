@@ -1,0 +1,41 @@
+<div class="app flex-row align-items-center" id="loginFormPage">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card-group mb-0">
+          <div class="card p-4">
+            <div class="card-block imgWrapper">
+              <img src="{{logoUrl}}" alt="">
+            </div>
+            <div class="card-block" [formGroup]='loginForm' id="loginForm">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="icon-user"></i></span>
+                <input type="text" class="form-control" placeholder="请输入用户名" formControlName='userName'>
+              </div>
+              <div class="input-group mb-4">
+                <span class="input-group-addon"><i class="icon-lock"></i></span>
+                <input type="password" class="form-control" placeholder="请输入密码" formControlName='password'>
+              </div>
+              <div class="loginmsgwrapper">
+                <span *ngIf='loginmsgshow'>提示：{{loginmsg}}</span>
+                <div id="rempassword" (click)='toggleRemPaw()'>
+                  <i class="fa fa-check-square"></i>
+                  <span>记住密码</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <button type="button" class="btn btn-secondary px-4" (click)='login()'>登录</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="loginFormPage_footer">
+    <span>©2017南昌市公安局交通管理局/银江股份</span>
+  </div>
+</div>
+

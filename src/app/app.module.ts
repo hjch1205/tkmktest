@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app.routing';
 
 // Layouts
 import { FullLayoutComponent } from './layouts/full-layout.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   imports: [
@@ -32,7 +33,8 @@ import { FullLayoutComponent } from './layouts/full-layout.component';
     NAV_DROPDOWN_DIRECTIVES,
     BreadcrumbsComponent,
     SIDEBAR_TOGGLE_DIRECTIVES,
-    AsideToggleDirective
+    AsideToggleDirective,
+    LoginComponent
   ],
   providers: [{
     provide: LocationStrategy,

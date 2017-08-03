@@ -12,8 +12,8 @@
     <div class="sidebar">
         <nav class="sidebar-nav">
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                <li class="nav-item" *ngFor="let menu of menuList">
+                    <a class="nav-link" routerLinkActive="active" routerLink="{{menu.route}}"><i class="icon-speedometer"></i> {{menu.name}}</a>
                 </li>
             </ul>
         </nav>

@@ -1,20 +1,100 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "outDir": "./dist/out-tsc",
-    "baseUrl": "src",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2016",
-      "dom"
-    ]
-  }
+    "menu": {
+        "button": [
+            {
+            "name": "政法动态", 
+            "sub_button": [
+                {
+                    "type": "click", 
+                    "name": "基层动态", 
+                    "key": "key_jcdt"
+                }, 
+                {
+                    "type": "click", 
+                    "name": "防范知识", 
+                    "key": "key_ffzs"
+                }, 
+                {
+                    "type": "click", 
+                    "name": "平安创建", 
+                    "key": "key_pacj"
+                },
+				{
+                    "type": "click", 
+                    "name": "涉法涉讼", 
+                    "key": "key_sfss"
+                },
+				{
+                    "type": "click", 
+                    "name": "政法时讯", 
+                    "key": "key_zfsx"
+                }
+            ]
+        }, 
+                   {
+                "name": "便民服务", 
+                "sub_button": [
+                    {
+                        "type": "view", 
+                        "name": "法院服务", 
+                        "url": "http://uchoice.ronux.me/anyi-wx-hjc/weixin?module=court", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "view", 
+                        "name": "检察院服务", 
+                        "url": "http://uchoice.ronux.me/anyi-wx-hjc/weixin?module=procuratorate", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "view", 
+                        "name": "公安局服务", 
+                        "url": "http://uchoice.ronux.me/anyi-wx-hjc/weixin?module=police", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "view", 
+                        "name": "司法局服务", 
+                        "url": "http://uchoice.ronux.me/anyi-wx-hjc/weixin?module=justice", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "view", 
+                        "name": "信访局服务", 
+                        "url": "http://111.75.198.60/NCWSXF/ayx/homepage.htm", 
+                        "sub_button": [ ]
+                    }
+                ]
+            }, 
+            {
+                "name": "互动交流", 
+                "sub_button": [
+                    {
+                        "type": "view", 
+                        "name": "签到", 
+                        "url": "http://uchoice.ronux.me/anyi-wx-hjc/weixin?module=signin", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "view", 
+                        "name": "个人中心", 
+                        "url": "http://uchoice.ronux.me/anyi-wx-hjc/weixin?module=grzx", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "view", 
+                        "name": "建言献策", 
+                        "url": "http://uchoice.ronux.me/anyi-wx-hjc/weixin?module=advise", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "view", 
+                        "name": "平安志愿者", 
+                        "url": "http://uchoice.ronux.me/anyi-wx-hjc/weixin?module=volunteer", 
+                        "sub_button": [ ]
+                    }
+                ]
+            }
+        ]
+    }
 }
